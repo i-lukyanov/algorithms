@@ -10,7 +10,7 @@ function mergeS(array $arr1, array $arr2): array
 
     $cnt1 = $cnt2 = 0;
     $result = [];
-    while ($cnt1 < $maxLen || $cnt2 < $maxLen) {
+    while ($cnt1 < $maxLen && $cnt2 < $maxLen) {
         echo $cnt1 . ' | ' . $cnt2;
         if ($cnt1 >= $arrLen1 && $cnt2 < $arrLen2) {
             $result[] = $arr2[$cnt2];

@@ -20,33 +20,6 @@ class ListNode
 class LinkedListSum
 {
     /**
-     * @param ListNode $head
-     * @return ListNode
-     */
-    public function middleNode(ListNode $head): ListNode
-    {
-        $curNode = clone $head;
-
-        $nodeValues = [$head->val];
-
-        while ($curNode !== null) {
-            if ($curNode->next !== null) {
-                $nodeValues[] = $curNode->next->val;
-            }
-
-            $curNode = $curNode->next;
-        }
-
-        $midKey = (int)floor(count($nodeValues) / 2);
-
-        for ($i = 0; $i < $midKey; $i++) {
-            $head = $head->next;
-        }
-
-        return $head;
-    }
-
-    /**
      * @param ListNode $l1
      * @param ListNode $l2
      * @return ListNode

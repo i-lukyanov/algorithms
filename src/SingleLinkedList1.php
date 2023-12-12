@@ -104,18 +104,18 @@ prev = 5
  * }
  */
 
-$node1->val = 2
- $node2->val = 2
+//$node1->val = 2
+// $node2->val = 2
 
-class Solution {
-    /**
-     * @param ListNode $head
-     * @return ListNode
-     */
-    function detectCycle($head) {
-
-    }
-}
+//class Solution {
+//    /**
+//     * @param ListNode $head
+//     * @return ListNode
+//     */
+//    function detectCycle($head) {
+//
+//    }
+//}
 
 // 1 -> 2 -> 3 -> n : false
 // 1 -> 2 -> 3 -> 2 : true
